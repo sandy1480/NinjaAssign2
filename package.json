@@ -1,0 +1,29 @@
+{
+  "name": "socketiowebrtc",
+  "version": "1.0.0",
+  "description": "",
+  "main": "server.js",
+  "scripts": {
+    "clean": "node node_modules/gulp/bin/gulp.js --no-color clean",
+    "build": "node node_modules/gulp/bin/gulp.js --no-color build",
+    "test": "node node_modules/gulp/bin/gulp.js --no-color test",
+    "prepare-for-maven-war": "node node_modules/gulp/bin/gulp.js --no-color prepare-for-maven-war",
+    "start": "nodemon ./server.js"
+  },
+  "author": "Girish",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.16.4",
+    "node-static": "^0.7.11",
+    "nodemon": "^1.18.5",
+    "socket.io": "^2.1.1"
+  },
+  "devDependencies": {
+    "del": "^3.0.0",
+    "gulp": "^3.9.1",
+    "gulp-util": "^3.0.8",
+    "mkdirp": "^0.5.1",
+    "touch": "^3.1.0",
+    "yargs": "^12.0.2"
+  }
+}
